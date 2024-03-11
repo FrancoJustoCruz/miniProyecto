@@ -5,7 +5,7 @@ import { pool } from './db.js'
 
 export const index = async (req, res) => {
   try {
-    const pathToFile = 'D:/mis archivos/Workspace/miniProyecto/public/index.html';
+    const pathToFile = 'index.html'
     const html = await fs.readFile(pathToFile, 'utf-8')
     res.writeHead(200, { 'Content-Type': 'text/html' })
     res.end(html)
